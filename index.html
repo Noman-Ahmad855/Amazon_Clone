@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address">
+                 <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">Pakistan</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="language-container">
+                <p>English</p>
+                <div class="nav-flag"></div>
+            </div>
+            
+            <div class="nav-signin">
+                <p><span>Hello, sign in</span></p>
+            <div class="dropdown">
+                <p class="nav-sec" onclick="toggleDropdown()">Account & Lists ▼</p>
+            </div>
+            </div>
+
+            <div class="nav-return">
+                <p><span>Returns</span></p>
+                <p class="nav-sec">& Orders</p>
+            </div>
+
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                <a href="#" class="menu-link">All</a>
+            </div>
+            <div class="panel-options">
+                <p1><a href="#" class="menu-link">Fresh</a></p1>
+                <p1><a href="#" class="menu-link">MX Player</a></p1>
+                <p1><a href="#" class="menu-link">Sell</a></p1>
+                <p1><a href="#" class="menu-link">Best Sellers</a></p1>
+                <p1><a href="#" class="menu-link">Mobiles</a></p1>
+                <p1><a href="#" class="menu-link">Today's Deals</a></p1>
+                <p1><a href="#" class="menu-link">Customer Service</a></p1>
+                <p1><a href="#" class="menu-link">Electronics</a></p1>
+                <p1><a href="#" class="menu-link">Amazon Pay</a></p1>
+                <p1><a href="#" class="menu-link">New Releases</a></p1>
+                <p1><a href="#" class="menu-link">Prime</a></p1>
+                <p1><a href="#" class="menu-link">Home & Kitchen</a></p1>
+                <p1><a href="#" class="menu-link">Fashion</a></p1>  
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="hero-section">
+    </div>
+
+    <div class="shop-section">
+       <div class="box1 box">
+            <div class="box-content">
+                <h2>Appliances for your home | Up to 55% off</h2>
+                <a href="#" class="menu-link"><div class="box-img" style="background-image: url('appliances.jpg');"></div></a>
+                <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+            </div>
+       </div>
+       <div class="box2 box">
+        <div class="box-content">
+            <h2>Revamp your home in style</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('revamp.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+       </div>
+       <div class="box3 box">
+        <div class="box-content">
+            <h2>Health & wellness must have</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('box3.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+       </div>
+       <div class="box4 box">
+        <div class="box-content">
+            <h2>The best electronics for you</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('box4.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+       </div>
+       <div class="box5 box">
+        <div class="box-content">
+            <h2>Smart home gift ideas | Up to 55% off</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('box5.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+        </div>
+         <div class="box6 box">
+        <div class="box-content">
+            <h2>4K smart TV from Tonme digital factory</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('box6.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+        </div>
+        <div class="box7 box">
+        <div class="box-content">
+            <h2>Men Outfits-Jogging track suits</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('box7.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+        </div>
+        <div class="box8 box">
+        <div class="box-content">
+            <h2>Beautiful casual dress for women</h2>
+            <a href="#" class="menu-link"><div class="box-img" style="background-image: url('box8.jpg');"></div></a>
+            <p><a href="#" onclick="exploreFunction()" style="text-decoration: none; color: dodgerblue;">Explore all</a></p>
+        </div>
+    </div>
+    </div>
+
+    <div class="signin-section">
+        <div class="content">
+            <h2>See personalized recommendations</h2>
+            <button><a href="#" style="text-decoration: none; color: black;">Sign in</a></button>
+            <p>New customer? <a href="#">Start here.</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">
+            Back to top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#" class="menu-link">About Amazon</a>
+                <a href="#" class="menu-link">Careers</a>
+                <a href="#" class="menu-link">Press Releases</a>
+                <a href="#" class="menu-link">Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p>Connect with Us</p>
+                <a href="#" class="menu-link">Facebook</a>
+                <a href="#" class="menu-link">Twitter</a>
+                <a href="#" class="menu-link">Instagram</a>
+            </ul>
+
+            <ul>
+                <p>Make Money with Us</p>
+                <a href="#" class="menu-link">Sell on Amazon</a>
+                <a href="#" class="menu-link">Sell under Amazon</a>
+                <a href="#" class="menu-link">Accelerator</a>
+                <a href="#" class="menu-link">Become an Affiliate</a>
+                <a href="#" class="menu-link">Advertise Your Products</a>
+                <a href="#" class="menu-link">Protect and Build Your Brand</a>
+                <a href="#" class="menu-link">Amazon Global Selling</a>
+            </ul>
+
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#" class="menu-link">Your Account</a>
+                <a href="#" class="menu-link">Returns Centre</a>
+                <a href="#" class="menu-link">Recalls and Product Safety Alerts</a>
+                <a href="#" class="menu-link">100% Purchase Protection</a>
+                <a href="#" class="menu-link">Amazon App Download</a>
+                <a href="#" class="menu-link">Help</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo2">
+                <button><a href="" style="color: white; text-decoration: none;">English</a></button>
+            </div>
+        
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
+            </div>
+            <div class="copyright">
+                <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
